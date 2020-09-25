@@ -11,6 +11,37 @@ You can add the following inline styles to your content:
 * Monospace
 * Highlight
 
+== Marmaid test
+[mermaid]
+----
+graph TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+----
+
+[mermaid]
+----
+gantt
+    dateFormat  YYYY-MM-DD
+    title Adding GANTT diagram to mermaid
+    excludes weekdays 2020-06-10
+
+    section A section
+    Completed task            :done,    des1, 2020-06-06,2020-06-08
+    Active task               :active,  des2, 2020-06-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+----
+
+
 == Bold & Italic
 
 You can bold and italic entire phrases, a word, and characters in a word.
